@@ -26,7 +26,7 @@
     <div id="progressbar"></div>
     <div id="scrollPath"></div>
     <header>
-        <div class="logo">
+        <div class="logo" onclick="location.href='index.php';">
             <img src="./img/icon.png" alt="dayo logo">
         </div>
         <nav>

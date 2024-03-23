@@ -1,6 +1,6 @@
 footer {
     width: 100vw;
-    background: var(--panelBlack);
+    background: var(--panelBlack2);
     display: flex; 
     color: lightgrey; 
     font-size: .9em;
