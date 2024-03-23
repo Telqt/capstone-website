@@ -17,8 +17,9 @@ include_once("header.php");
 
     
 
-    <script src="./js/scroll.js"></script>
 
-</body>
+<?php 
 
-</html>
+include_once("footer.php");
+
+?>

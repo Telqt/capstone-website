@@ -67,6 +67,7 @@
 
 body {
     background: var(--bgBlack);
+    scroll-behavior: smooth;
 }
 
 
@@ -74,7 +75,7 @@ body {
 /*   HERO  */
 
 .hero {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
