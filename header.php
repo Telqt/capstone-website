@@ -43,7 +43,7 @@
                 if(isset($_SESSION["UID"])) {
 
                     if($_SESSION["UID"] === 1 AND $_SESSION["email"] === "admin.dayo@gmail.com") {
-                        echo '<a class="login_btn" href="dashboard.php">Dashboard</a>';
+                        echo '<a class="login_btn" href="dashboardInv.php">Dashboard</a>';
                         echo '<a class="logout_btn" href="logout.php">Logout</a>';
                     } else {
                         echo '<a class="login_btn" href="profile.php">' . $_SESSION["firstname"] . '</a>';

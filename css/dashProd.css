@@ -1,0 +1,104 @@
+.dash_prod_container {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.dash_prod_container h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-family: cubano, sans-serif;
+}
+
+.dash_prod_container p {
+    color: #fff;
+    padding: 15px 0;
+    font-family: poppins, sans-serif;
+    user-select: none;
+}
+
+#add {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    font-family: poppins, sans-serif;
+    border-radius: 10px;
+    transition: 200ms all linear;
+}
+
+#add:hover {
+    box-shadow: 5px 5px 0 #000;
+    background: var(--signupColor);
+}
+
+.addProductPanel form{
+    display: flex;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.addLeftPanel,
+.addRightPanel {
+    background: var(--panelBlack);
+    padding: 20px;
+    border-radius: 20px;
+    width: 50%;
+    border: 1px solid #000;
+    box-shadow: 0 5px 0 #000;
+}
+
+.nameDescPanel,
+.imgPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+    background: var(--panelBlack2);
+    border-radius: 20px;
+}
+
+#desc {
+    height: 100px;
+}
+
+
+.nameDescPanel input,
+.nameDescPanel textarea,
+.nameDescPanel select,
+.addRightPanel input {
+    background: var(--panelBlackDarker);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+#price {
+    padding-left: 48px;
+}
+
+.nameDescPanel h2 {
+    color: #fff;
+    transform: translate(15px, -25px);
+    font-family: poppins, sans-serif;
+    font-size: .8rem;
+    user-select: none;
+}
+
+.imgPanel img {
+    height: 300px;
+}
+
+#productSavebtn {
+    float: right;
+    padding: 20px;
+    font-family: poppins, sans-serif;
+    margin-top: 20px;
+    background: #000;
+    transition: all 200ms linear;
+}
+
+#productSavebtn:hover {
+    box-shadow: 5px 5px 0 #000;
+    background: var(--signupColor);
+    color: #fff;
+}
