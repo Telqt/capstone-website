@@ -7,6 +7,7 @@
     color: #fff;
     font-size: 2rem;
     font-family: cubano, sans-serif;
+    padding: 40px 0 40px;
 }
 
 .dash_prod_container p {
@@ -18,7 +19,7 @@
 
 #add {
     padding: 10px 20px;
-    background-color: #000;
+    background-color: #000000;
     color: #fff;
     font-family: poppins, sans-serif;
     border-radius: 10px;
@@ -30,10 +31,97 @@
     background: var(--signupColor);
 }
 
+
+
+
+
+
+
+
+
+/* PRODUCT DISPLAY */
+
+
+.product-display {
+    margin: 10px 20px 20px 240px;
+    padding: 20px;
+    background: var(--panelBlack);
+    border: 1px solid #000;
+    border-radius: 20px;
+    box-shadow: 0 5px 0 #000;
+}
+
+
+
+nav, .row {
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+    color: #fff;
+    font-family: poppins, sans-serif;
+}
+
+nav {
+    padding: 20px;
+}
+
+.row {
+    background: var(--bgBlack);
+    border-radius: 10px;
+    margin-top: 5px;
+    align-items: center;
+}
+ 
+.col {
+    flex: 1;
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.colh {
+    flex: 1;
+    text-align: center;
+}
+
+.col img {
+    height: 80px;
+    border-radius: 100%;
+    border: 2px solid #000;
+}
+
+.edit, .delete {
+    padding: 10px 20px;
+    color: #fff;
+    font-family: cubano, sans-serif;
+    background: #000;
+    margin-right: 5px;
+    transition: 200ms linear all;
+}
+
+.edit:hover {
+    background: var(--loginColor);
+    box-shadow: 5px 5px 0 #000;
+}
+
+.delete:hover {
+    background: red;
+    box-shadow: 5px 5px 0 #000;
+}
+
+
+
+
+
+
+
+/* ADD PRODUCT PAGE */
+
 .addProductPanel form{
     display: flex;
     gap: 10px;
     padding: 20px 0;
+    margin-top: 10px;
 }
 
 .addLeftPanel,
@@ -85,7 +173,12 @@
 }
 
 .imgPanel img {
-    height: 300px;
+    height: fit-content;
+    background-size: contain;
+}
+
+#imgInp {
+    margin-top: 10px;
 }
 
 #productSavebtn {
@@ -102,3 +195,5 @@
     background: var(--signupColor);
     color: #fff;
 }
+
+

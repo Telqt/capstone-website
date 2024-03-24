@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./css/shop.css">
+    <link rel="stylesheet" href="./css/shop.css">\
+
+    <link rel="shortcut icon" href="./img/favincon.png" type="image/x-icon">
     
     <title>DAYO | Tactical gear</title>
 </head>

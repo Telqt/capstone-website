@@ -1,6 +1,6 @@
 .login-container,
 .signup-container {
-    height: 100vh;
+    height: calc(100vh - 20px);
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -11,9 +11,10 @@
 
 .login-left,
 .signup-left {
+    margin-top: 80px;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     height: 100%;
     width: 30vw;
@@ -160,12 +161,14 @@
 
 
 .login-right {
-    position: relative;
     width: 60vw;
     background: url('../img/blackcamo.jpg');
     background-size: contain;
     height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-right::before {
@@ -179,16 +182,13 @@
 }
 
 .login-right p {
-    position: absolute;
-    right: 5vw;
-    bottom: 10vh;
     font-size: 3rem;
     z-index: 5;
     font-family: cubano, sans-serif;
-    text-align: end;
-    padding: 0 0 0 200px;
+    text-align: start;
     color: #fff;
     text-shadow: 0 0 10px #000;
+    width: 40vw;
 }
 
 .login-right img {

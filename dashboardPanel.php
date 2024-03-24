@@ -26,11 +26,16 @@ session_start()
         <link rel="stylesheet" href="./css/shop.css">
         <link rel="stylesheet" href="./css/dash.css">
         <link rel="stylesheet" href="./css/dashProd.css">
+
+        <link rel="shortcut icon" href="./img/favincon.png" type="image/x-icon">
+
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div id="progressbar"></div>
+        <div id="scrollPath"></div>
 
         <div class="dash_container">
             <div class="dash_panel">
