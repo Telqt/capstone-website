@@ -33,7 +33,7 @@
     echo '
     
     <div class="addProductPanel">
-        <form action="../updateProd.inc.php?edit=' . $prodID . '" method="post" enctype="multipart/form-data">
+        <form action="./updateProd.inc.php?edit=' . $prodID . '" method="post" enctype="multipart/form-data">
             <div class="addLeftPanel">
                 <p>Basic Information</p>
                 <div class="nameDescPanel">
@@ -58,8 +58,8 @@
                 <div class="addRightPanel">
                     <p>Product Image</p>
                     <div class="imgPanel">
-                        <img id="outputImg" src="#" alt="">
-                        <input id="imgInp" type="file" name="productphoto" accept="image/*" required autocomplete="off" onchange="loadFile(event)">
+                        <img id="outputImg" src="' . $row["prodPicture"] . '" alt="">
+                        <input id="imgInp" type="file" name="productphoto" accept="image/*" autocomplete="off" onchange="loadFile(event)">
                     </div>
                     <input id="productSavebtn" type="submit" name="submit" value="Save Changes">
                 </div>
@@ -76,6 +76,16 @@
     ?>
 
 </div>
+
+<script>
+  var loadFile = function(event) {
+    var output = document.getElementById('outputImg');
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function() {
+      URL.revokeObjectURL(output.src) // free memory
+    }
+  };
+</script>
 
 
 <?php

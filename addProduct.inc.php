@@ -1,8 +1,8 @@
 <?php
 
-include_once("dbh.php");
+include_once("./backend/dbh.php");
 
-// Get form data
+
 $productname = $_POST['productname'];
 $productdesc = $_POST['productdesc'];
 $price = $_POST['price'];

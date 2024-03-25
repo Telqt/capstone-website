@@ -9,10 +9,6 @@
     --signupColor: #36a420;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 ::-webkit-scrollbar {
     width: 0;
 }
