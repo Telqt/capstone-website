@@ -2,19 +2,20 @@
 include_once("./backend/dbh.php");
 
 if(isset($_GET['delete'])) {
-    $prodID = mysqli_real_escape_string($conn, $_GET['delete']);
+
+    $UID = mysqli_real_escape_string($conn, $_GET['delete']);
     
-    $sql = "DELETE FROM products WHERE prodID = '$prodID'";
+    $sql = "DELETE FROM users WHERE UID = '$UID'";
     if(mysqli_query($conn, $sql)) {
         echo "<script>alert('Record deleted.');
         
-        location.href='dashboardProducts.php?=delete-success';
+        location.href='dashboardUsers.php?=delete-success';
         
         </script>";
     } else {
         echo "<script>alert('Error deleting record:'" . mysqli_error($conn) . "');
         
-        location.href='dashboardProducts.php?=delete-failed';
+        location.href='dashboardUsers.php?=delete-failed';
         
         </script>";
     }

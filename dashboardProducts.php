@@ -23,30 +23,30 @@ include_once("dashboardPanel.php");
     </section>
 
     <?php 
-include_once("./backend/dbh.php");
+        include_once("./backend/dbh.php");
 
-$select = mysqli_query($conn,"SELECT * FROM products");
+        $select = mysqli_query($conn,"SELECT * FROM products");
 
-while ($row = mysqli_fetch_array($select)) {
-    echo "
-    <div class='row'>
-        <dialog class='modal' id='modal" . $row["prodID"] . "'>
-            <p>Are you sure you want to delete the record?</p>
-            <a class='delete' href='delete.php?delete=" . $row["prodID"] . "'>Yes</a>
-            <button class='delete close-modal'>No</button>
-        </dialog>
-        <div class='col'><img src='" . $row['prodPicture'] ."'></div>
-        <div class='col'>" . $row['prodName'] ."</div>
-        <div class='col'>₱" . $row['prodPrice'] ."</div>
-        <div class='col'>" . $row['prodCategory'] ."</div>
-        <div class='col'>
-            <a class='edit' href='edit.php?edit=" . $row['prodID'] ."'>Edit</a>
-            <button class='delete open-modal' data-modal-id='modal" . $row["prodID"] . "'>Delete</button>
-        </div>
-    </div>
-    ";
-}
-?>
+        while ($row = mysqli_fetch_array($select)) {
+            echo "
+            <div class='row'>
+                <dialog class='modal' id='modal" . $row["prodID"] . "'>
+                    <p>Are you sure you want to delete the record?</p>
+                    <a class='delete' href='delete.php?delete=" . $row["prodID"] . "'>Yes</a>
+                    <button class='delete close-modal'>No</button>
+                </dialog>
+                <div class='col'><img src='" . $row['prodPicture'] ."'></div>
+                <div class='col'>" . $row['prodName'] ."</div>
+                <div class='col'>₱" . $row['prodPrice'] ."</div>
+                <div class='col'>" . $row['prodCategory'] ."</div>
+                <div class='col'>
+                    <a class='edit' href='edit.php?edit=" . $row['prodID'] ."'>Edit</a>
+                    <button class='delete open-modal' data-modal-id='modal" . $row["prodID"] . "'>Delete</button>
+                </div>
+            </div>
+            ";
+        }
+    ?>
 
     
 </div>

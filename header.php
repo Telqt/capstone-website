@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./css/shop.css">\
+    <link rel="stylesheet" href="./css/shop.css">
 
-    <link rel="shortcut icon" href="./img/favincon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     
     <title>DAYO | Tactical gear</title>
 </head>
@@ -48,7 +48,7 @@
                         echo '<a class="login_btn" href="dashboardInv.php">Dashboard</a>';
                         echo '<a class="logout_btn" href="logout.php">Logout</a>';
                     } else {
-                        echo '<a class="login_btn" href="profile.php">' . $_SESSION["firstname"] . '</a>';
+                        echo '<a class="login_btn" href="userProfile.php?UID=' . $_SESSION["UID"] . '">' . $_SESSION["firstname"] . '</a>';
                         echo '<a class="logout_btn" href="logout.php">Logout</a>';
                     }              
                 } else {

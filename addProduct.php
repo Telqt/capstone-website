@@ -27,6 +27,7 @@ include_once("dashboardPanel.php");
                         <option value="Bandolier">Bandolier</option>
                         <option value="Parts">Parts</option>
                         <option value="Accessories">Accessories</option>
+                        <option value="Boots">Boots</option>
                     </select>
                     <p>Price</p>
                     <input id="price" type="number" name="price" required autocomplete="off">
